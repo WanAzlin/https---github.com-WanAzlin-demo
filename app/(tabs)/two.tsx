@@ -1,12 +1,23 @@
-import { StyleSheet,Image } from 'react-native';
-
+import { StyleSheet,Image, Pressable } from 'react-native';
+import { Link,  } from 'expo-router';
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
+      <View style ={{flexDirection: "row"}}> 
       <Text style={styles.title}>11 October 2023</Text>
+      <Link href="/PendingRequest" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Text style={styles.title2}>View All</Text>
+                )}
+              </Pressable>
+      </Link>
+      
+      </View>
+      
       <View style={styles.separator} lightColor="#9B9897" darkColor="rgba(183,183,183)" />
       <View style ={{flexDirection: "row"}}>
       <Image style={styles.circle}
@@ -34,6 +45,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 18,
     marginBottom: 20,
+    paddingTop:15,
+    paddingLeft: 8,
   },
   textNoti1: {
     color: '#818181',
@@ -41,6 +54,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    fontWeight: 'bold',
+  },
+  title2: {
+    fontSize: 15,
+    paddingLeft: 130,
+    paddingTop: 3,
+    color: '#ED174E',
     fontWeight: 'bold',
   },
   separator: {

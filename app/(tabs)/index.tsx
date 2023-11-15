@@ -7,7 +7,8 @@ import { Text, View,  } from '../../components/Themed';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome</Text>
+      <Text style={styles.title1}>Welcome </Text>
+      <Text style={styles.title}>Wan Azlin</Text>
       
       <View style ={{flexDirection: "row"}}> 
       <View style={styles.box1}>
@@ -30,7 +31,7 @@ export default function TabOneScreen() {
       <Image style={styles.stretch}
       
         source={require("../(tabs)/img/parents.png")} />
-          <Link href="/request" asChild>
+          <Link href="/PendingRequest" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <Text style={styles.text1}>Request</Text>
@@ -94,8 +95,13 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginTop: 50,
   },
+  title1: {
+    fontSize: 15,
+    color: "grey",
+  },
   title: {
-    fontSize: 30,
+    marginTop:10,
+    fontSize: 35,
     fontWeight: 'bold',
   },
 
