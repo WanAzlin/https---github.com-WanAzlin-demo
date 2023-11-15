@@ -1,13 +1,12 @@
 
 import { StyleSheet, TextInput, Button} from 'react-native';
+import { useNavigation } from "@react-navigation/native";
+import EditScreenInfo from '../components/EditScreenInfo';
+import { Text, View } from '../components/Themed';
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
-import React, { useState } from 'react';
+
 
 export default function TabOneScreen() {
-
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Request Late</Text>

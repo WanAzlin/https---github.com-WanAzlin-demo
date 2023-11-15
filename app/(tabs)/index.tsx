@@ -1,7 +1,8 @@
-import { StyleSheet,Image } from 'react-native';
-import { useNavigation } from "@react-navigation/native";
+import { StyleSheet,Image,Pressable } from 'react-native';
+import { Link,  } from 'expo-router';
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View,  } from '../../components/Themed';
+
 
 export default function TabOneScreen() {
   return (
@@ -13,14 +14,30 @@ export default function TabOneScreen() {
       <Image style={styles.stretch}
       
       source={require("../(tabs)/img/students.png")} />
-        <Text style={styles.text1}>Attendances</Text>
+      <Link href="/request" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Text style={styles.text1}>Attendances</Text>
+                )}
+              </Pressable>
+      </Link>
+            
+
+        
         
       </View>
       <View style={styles.box2}>
       <Image style={styles.stretch}
       
         source={require("../(tabs)/img/parents.png")} />
-        <Text style={styles.text2}>Request</Text>
+          <Link href="/request" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Text style={styles.text1}>Request</Text>
+                )}
+              </Pressable>
+      </Link>
+        
         
       </View>
       </View>
