@@ -19,7 +19,7 @@ export default function TabOneScreen() {
       <TextInput style={styles.input}  placeholder='Alex have not gotten up from bed'/>
       
       <View style={styles.screenContainer}>
-      <Button title="Send" color={'#0F0F0F'}  />
+      <Button title="Send" color={'#FFFFFF'}  />
     </View>
     
       
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 120,
     alignSelf: "center",
     paddingVertical: 5,
-    backgroundColor: "#DAF7A6",
+    backgroundColor: "#A4CF78",
     marginTop: 20,
   }
 });

@@ -39,9 +39,20 @@ export default function TabOneScreen() {
               </Pressable>
       </Link>
         
-        
       </View>
       </View>
+      <View style={styles.button}>
+          <Link href="/request" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Image style={styles.stretch}
+      
+                  source={require("../(tabs)/img/add.png")} />
+                  
+                )}
+              </Pressable>
+      </Link>
+                  </View>
     </View>
   );
 }
@@ -50,6 +61,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+  },
+  button: {
+    width: 150,
+    height: 150,
+    marginTop: 200,
+    marginLeft:230,
   },
   text1: {
     fontWeight: 'bold',
@@ -67,7 +84,7 @@ const styles = StyleSheet.create({
     resizeMode: 'stretch',
   },
   box1: {
-    marginLeft: 30,
+    marginLeft: 20,
     marginRight: 30,
     alignSelf: "stretch",
     backgroundColor: "#FEFEFE",
