@@ -7,33 +7,11 @@ import { Text, View,  } from '../components/Themed';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
+      <Image style={styles.circle}
+        source={require("../app/(tabs)/img/test.jpg")} />
+      <Text style={styles.title}>Celebrate Independence Day Together with Happy Parents!</Text>
+      <Text style={styles.textReq1}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
       
-      <Text style={styles.title}>Events & Announcements</Text>
-      <View style={styles.separator} lightColor="#9B9897" darkColor="rgba(183,183,183)" />
-      <View style ={{flexDirection: "row"}}> 
-      <View style={styles.box1}>
-      <View style ={{flexDirection: "row"}}>
-      <View style={styles.screenContainer1}>
-      <View style ={{flexDirection: "row"}}>
-        <Image style={styles.circle}
-        source={require("../app/(tabs)/img/promotion.png")} />
-        <Button title="Independence Day" color={'#080805' }  />
-         </View>      
-    </View> 
-      </View>
-      <Text style={styles.textReq1}>School will remain close on 14th August 2019</Text>
-      <View style={styles.separator1} lightColor="#9B9897" darkColor="rgba(183,183,183)" />
-      <Link href="/merdeka" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <Text style={styles.textReq5}>Read More</Text>
-                )}
-              </Pressable>
-      </Link>
-      
-      </View>
-     
-      </View>
     </View>
     
   );
@@ -45,10 +23,10 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   circle: {
-    width: 25,
-    height: 25,
-    marginTop: 7,
-    borderRadius: 30,
+    width: 350,
+    height: 250,
+    marginTop: 10,
+    
   },
   text1: {
     fontWeight: 'bold',
@@ -99,7 +77,7 @@ const styles = StyleSheet.create({
     color: "grey",
   },
   title: {
-    marginTop: 5,
+    marginTop: 10,
     fontSize: 25,
     fontWeight: 'bold',
     alignSelf: 'center',
