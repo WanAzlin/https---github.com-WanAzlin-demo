@@ -15,7 +15,7 @@ export default function TabOneScreen() {
       <Image style={styles.stretch}
       
       source={require("../(tabs)/img/students.png")} />
-      <Link href="/request" asChild>
+      <Link href="/attendances" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <Text style={styles.text1}>Attendances</Text>

@@ -1,4 +1,4 @@
-import { StyleSheet,Image,Pressable,Button} from 'react-native';
+import { StyleSheet,Image,} from 'react-native';
 import { Link,  } from 'expo-router';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View,  } from '../components/Themed';
