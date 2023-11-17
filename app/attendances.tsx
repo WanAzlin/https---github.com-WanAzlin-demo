@@ -19,8 +19,8 @@ export default function TabOneScreen() {
       <View style={styles.box2}>
       <Image style={styles.stretch2}
       source={require("../app/(tabs)/img/goal.png")} />
-      <Text style={styles.text2}>Students Late</Text>
-      <Text style={styles.para2}>2</Text>
+      <Text style={styles.text2}>Students Got Late</Text>
+      <Text style={styles.para2}>5</Text>
       </View> 
       </View> 
       <View style={styles.box3}> 

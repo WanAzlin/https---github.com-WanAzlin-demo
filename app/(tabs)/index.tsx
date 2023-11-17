@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     resizeMode: 'stretch',
   },
   box1: {
-    marginLeft: 20,
+    marginLeft: 30,
     marginRight: 30,
     alignSelf: "stretch",
     backgroundColor: "#FEFEFE",
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     
   },
     box2: {
-    marginLeft: 3,
+    marginLeft: 10,
     marginRight: 30,
     alignSelf: "stretch",
     backgroundColor: "#FEFEFE",
